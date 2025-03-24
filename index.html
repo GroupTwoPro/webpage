@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 2 Introduction</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mission {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .member-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .member-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .team {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to Group 2</h1>
+        <p>Innovation • Teamwork • Excellence</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Mission Statement -->
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>We are a dedicated team of professionals committed to delivering innovative solutions through collaboration and technical excellence. Our focus is on creating impactful projects that make a difference.</p>
+        </section>
+
+        <!-- Team Members -->
+        <h2 style="text-align: center; margin-bottom: 1rem;">Meet the Team</h2>
+        <div class="team">
+            <!-- Member 1 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="Member 1" class="member-img">
+                <h3>John Doe</h3>
+                <p>Team Lead</p>
+                <p>Full-stack Developer</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="Member 2" class="member-img">
+                <h3>Jane Smith</h3>
+                <p>UX Designer</p>
+                <p>Frontend Specialist</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/150" alt="Member 3" class="member-img">
+                <h3>Mike Johnson</h3>
+                <p>Data Analyst</p>
+                <p>Backend Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer class="contact">
+        <h3>Contact Us</h3>
+        <p>Email: group2@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
